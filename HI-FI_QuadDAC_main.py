@@ -30,7 +30,7 @@ async def on_ready():
 async def help(ctx):
     embed = discord.Embed(
             title="HI-FI QuadDAC HELP",
-            description="★ 기본 접두사 : **h-**\n★ 현재 버전 : **BETA Service Mode**\n\n==============================\n\n모든 명령어를 볼려면 **[여기](http://teamempty.dothome.co.kr)**를 클릭해주세요!",
+            description="★ 기본 접두사 : **h-**\n★ 현재 버전 : **1.0**\n\n==============================\n\n모든 명령어를 볼려면 **[여기](http://teamempty.dothome.co.kr)**를 클릭해주세요!",
             color=0xffff00
         )
     await ctx.send(embed=embed)
@@ -48,7 +48,17 @@ async def 생활정보(ctx):
 async def info(ctx):
     embed = discord.Embed(
             title="Bot Running Information",
-            description="현재 돌아가고 있는곳 :\nㄴ Heroku or Developer PC에서 구동 중\n\n프로그래밍 언어 :\nㄴ Python 3.6.2",
+            description="현재 돌아가고 있는곳 :\nㄴ Lenovo K3 Note(with MIUI)에서 구동 중\n\n프로그래밍 언어 :\nㄴ Python 3.6.2",
+            color=0xffff00
+        )
+    await ctx.send(embed=embed)
+
+@client.command(pass_context=True)
+async def botinfo(ctx):
+    bid = client.user.id
+    embed = discord.Embed(
+            title="Bot Information",
+            description="**봇 ID** : " + str(bid) + "\n**봇 업타임** : 알수 없음\n**봇 소유자** : ClickToREturns(깃허브 참고)\n**업데이트 간격** : 그런거 몰라요, 깃허브 보세요",
             color=0xffff00
         )
     await ctx.send(embed=embed)
