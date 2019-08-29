@@ -87,4 +87,4 @@ async def 보(ctx):
     elif r == '보':
         await ctx.send("음 저는요.. : " + r + "\n> **저랑 비긴거 같아요**")
 
-client.run('NjExMzg1ODUzOTMwODk3NDE5.XWPGHg.LjkNtRKT9CrLvMciCuFPyo9LkAs')
+client.run('token')
