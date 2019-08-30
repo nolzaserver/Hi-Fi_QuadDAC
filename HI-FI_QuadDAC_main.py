@@ -4,8 +4,6 @@ from discord.ext.commands import Bot
 import asyncio
 import random
 import datetime
-import openpyxl
-import pylint
 
 client = commands.Bot(command_prefix = 'h-')
 client.remove_command("help")
